@@ -1,9 +1,7 @@
 'use strict';
 var express = require('express');
 var cors = require('cors');
-var fileAnalyze = require('./api/fileanalyze')
-// require and use "multer"...
-
+var fileAnalyze = require('./api/fileanalyse')
 var app = express();
 
 app.use(cors());
