@@ -1,0 +1,15 @@
+{
+  "name": "file-uploader",
+  "version": "1.0.0",
+  "description": "File uploader that outputs metadata.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0"
+  }
+}
