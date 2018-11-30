@@ -1,8 +1,7 @@
 'use strict';
-
 var express = require('express');
 var cors = require('cors');
-
+var fileAnalyze = require('./api/fileanalyze')
 // require and use "multer"...
 
 var app = express();
@@ -14,9 +13,7 @@ app.get('/', function (req, res) {
      res.sendFile(process.cwd() + '/views/index.html');
   });
 
-app.get('/hello', function(req, res){
-  res.json({greetings: "Hello, API"});
-});
+app.use('/api/fileanalyse', fileAnalyze);
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Node.js listening ...');
